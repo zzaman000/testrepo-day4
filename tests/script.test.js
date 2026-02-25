@@ -1,7 +1,7 @@
 const { getMessage } = require("../src/script");
 
 test("returns correct pipeline success message", () => {
-  expect(getMessage()).toBe("Pipeline is working!");
+  expect(getMessage()).toBe("Pipeline is working from Branch A and Branch B!");
 });
 
 test("returns custom message when provided", () => {
@@ -9,5 +9,5 @@ test("returns custom message when provided", () => {
 });
 
 test("falls back to default when empty string is provided", () => {
-  expect(getMessage("")).toBe("Pipeline is working perfectly!");
+  expect(getMessage("")).toBe("Pipeline is working from Branch A and Branch B!");
 });
