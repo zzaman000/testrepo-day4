@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Source') {
-            steps {
-                git 'https://github.com/zzaman000/testrepo-day4.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
