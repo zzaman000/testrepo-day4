@@ -2,7 +2,8 @@
   "name": "ci-cd-demo",
   "version": "1.0.1",
   "scripts": {
-    "test": "jest"
+  "test": "jest",
+  "build": "echo Building project..."
   },
   "devDependencies": {
     "jest": "^29.0.0"
