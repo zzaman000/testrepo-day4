@@ -7,3 +7,7 @@ test("returns correct pipeline success message", () => {
 test("returns custom message when provided", () => {
   expect(getMessage("Hello")).toBe("Hello");
 });
+
+test("falls back to default when empty string is provided", () => {
+  expect(getMessage("")).toBe("Pipeline is working perfectly!");
+});
